@@ -1,0 +1,83 @@
+{
+    "query": "backend python",
+    "timestamp": "2026-03-16",
+    "papers": [
+        {
+            "title": "Python GUI Scripting Interface for Running Atomic Physics Applications",
+            "summary": "",
+            "abstract": "We create a Python GUI scripting interface working under Windows in addition to (UNIX/Linux). The GUI has been built around the Python open-source programming language. We use the Python's GUI library that so called Python Mega Widgets (PMW) and based on Tkinter Python module (http://www.freenetpages.co.uk/hp/alan.gauld/tutgui.htm). The new GUI was motivated primarily by the desire of more updated operations, more flexibility incorporating future and current improvements in producing atomic data. Furthermore it will be useful for a variety of applications of atomic physics, plasma physics and astrophysics and will help in calculating various atomic properties."
+        },
+        {
+            "title": "ePython: An implementation of Python for the many-core Epiphany coprocessor",
+            "summary": "",
+            "abstract": "The Epiphany is a many-core, low power, low on-chip memory architecture and one can very cheaply gain access to a number of parallel cores which is beneficial for HPC education and prototyping. The very low power nature of these architectures also means that there is potential for their use in future HPC machines, however there is a high barrier to entry in programming them due to the associated complexities and immaturity of supporting tools.\n\nIn this paper we present our work on ePython, a subset of Python for the Epiphany and similar many-core co-processors. Due to the limited on-chip memory per core we have developed a new Python interpreter and this, combined with additional support for parallelism, has meant that novices can take advantage of Python to very quickly write parallel codes on the Epiphany and explore concepts of HPC using a smaller scale parallel machine."
+        },
+        {
+            "title": "AutoParallel: A Python module for automatic parallelization and distributed execution of affine loop nests",
+            "summary": "",
+            "abstract": "The last improvements in programming languages, programming models, and frameworks have focused on abstracting the users from many programming issues. Among others, recent programming frameworks include simpler syntax, automatic memory management and garbage collection, which simplifies code re-usage through library packages, and easily configurable tools for deployment.\n\nFor instance, Python has risen to the top of the list of the programming languages due to the simplicity of its syntax, while still achieving a good performance even being an interpreted language. Moreover, the community has helped to develop a large number of libraries and modules, tuning them to obtain great performance.\n\nHowever, there is still room for improvement when preventing users from dealing directly with distributed and parallel computing issues. This paper proposes and evaluates AutoParallel, a Python module to automatically find an appropriate task-based parallelization of affine loop nests to execute them in parallel in a distributed computing infrastructure."
+        },
+        {
+            "title": "Extendible and Efficient Python Framework for Solving Evolution Equations with Stabilized Discontinuous Galerkin Method",
+            "summary": "",
+            "abstract": "This paper discusses a Python interface for the recently published DUNE-FEM-DG module which provides highly efficient implementations of the Discontinuous Galerkin (DG) method for solving a wide range of non linear partial differential equations (PDE). Although the C++ interfaces of DUNE-FEM-DG are highly flexible and customizable, a solid knowledge of C++ is necessary to make use of this powerful tool.\n\nWith this work easier user interfaces based on Python and the Unified Form Language are provided to open DUNE-FEM-DG for a broader audience. The Python interfaces are demonstrated for both parabolic and first order hyperbolic PDEs."
+        },
+        {
+            "title": "Performance of Python runtimes on a non-numeric scientific code",
+            "summary": "",
+            "abstract": "The Python library FatGHol FatGHoL used in Murri2012 to reckon the rational homology of the moduli space of Riemann surfaces is an example of a non-numeric scientific code: most of the processing it does is generating graphs (represented by complex Python objects) and computing their isomorphisms (a triple of Python lists; again a nested data structure). These operations are repeated many times over: for example, the spaces and are triangulated by 4'583'322 and 747'664 graphs, respectively.\n\nThis is an opportunity for every Python runtime to prove its strength in optimization. The purpose of this experiment was to assess the maturity of alternative Python runtimes, in terms of: compatibility with the language as implemented in CPython 2.7, and performance speedup."
+        }
+    ],
+    "github_repositories": [
+        {
+            "repo": "Hello-Python",
+            "description": "Curso para aprender el lenguaje de programaci\u00f3n Python desde cero y para principiantes. 100 clases, 44 horas en v\u00eddeo, c\u00f3digo, proyectos y grupo de chat. Fundamentos, frontend, backend, testing, IA...",
+            "stars": 34798
+        },
+        {
+            "repo": "ogre",
+            "description": "high-performance rendering backend (C++, Python, C#, Java)",
+            "stars": 4512
+        },
+        {
+            "repo": "deepseek-ocr.rs",
+            "description": "Rust multi\u2011backend OCR/VLM engine (DeepSeek\u2011OCR-1/2, PaddleOCR\u2011VL, DotsOCR) with DSQ quantization and an OpenAI\u2011compatible server & CLI \u2013 run locally without Python.",
+            "stars": 2149
+        },
+        {
+            "repo": "elysia",
+            "description": "Python package and backend for the Elysia platform app.",
+            "stars": 1882
+        },
+        {
+            "repo": "Nginx-Lua-Anti-DDoS",
+            "description": "A Anti-DDoS script to protect Nginx web servers using Lua with a HTML Javascript based authentication puzzle inspired by Cloudflare I am under attack mode an Anti-DDoS authentication page protect yourself from every attack type All Layer 7 Attacks Mitigating Historic Attacks DoS DoS Implications DDoS All Brute Force Attacks Zero day exploits Social Engineering Rainbow Tables Password Cracking Tools Password Lists Dictionary Attacks Time Delay Any Hosting Provider Any CMS or Custom Website Unlimited Attempt Frequency Search Attacks HTTP Basic Authentication HTTP Digest Authentication HTML Form Based Authentication Mask Attacks Rule-Based Search Attacks Combinator Attacks Botnet Attacks Unauthorized IPs IP Whitelisting Bruter THC Hydra John the Ripper Brutus Ophcrack unauthorized logins Injection Broken Authentication and Session Management Sensitive Data Exposure XML External Entities (XXE) Broken Access Control Security Misconfiguration Cross-Site Scripting (XSS) Insecure Deserialization Using Components with Known Vulnerabilities Insufficient Logging & Monitoring Drupal WordPress Joomla Flash Magento PHP Plone WHMCS Atlassian Products malicious traffic Adult video script avs KVS Kernel Video Sharing Clip Bucket Tube sites Content Management Systems Social networks scripts backends proxy proxies PHP Python Porn sites xxx adult gaming networks servers sites forums vbulletin phpbb mybb smf simple machines forum xenforo web hosting video streaming buffering ldap upstream downstream download upload rtmp vod video over dl hls dash hds mss livestream drm mp4 mp3 swf css js html php python sex m3u zip rar archive compressed mitigation code source sourcecode chan 4chan 4chan.org 8chan.net 8ch 8ch.net infinite chan 8kun 8kun.net anonymous anon tor services .onion torproject.org nginx.org nginx.com openresty.org darknet dark net deepweb deep web darkweb dark web mirror vpn reddit reddit.com adobe flash hackthissite.org dreamhack hack hacked hacking hacker hackers hackerz hackz hacks code coding script scripting scripter source leaks leaked leaking cve vulnerability great firewall china america japan russia .gov government http1 http2 http3 quic q3 litespeedtech litespeed apache torrents torrent torrenting webtorrent bittorrent bitorrent bit-torrent cyberlocker cyberlockers cyber locker cyberbunker warez keygen key generator free irc internet relay chat peer-to-peer p2p cryptocurrency crypto bitcoin miner browser xmr monero coinhive coin hive coin-hive litecoin ethereum cpu cycles popads pop-ads advert advertisement networks banner ads protect ovh blazingfast.io amazon steampowered valve store.steampowered.com steamcommunity thepiratebay lulzsec antisec",
+            "stars": 1558
+        },
+        {
+            "repo": "React-Redux-Flask",
+            "description": "Boilerplate application for a Python/Flask JWT Backend and a Javascript/React/Redux Front-End with Material UI.",
+            "stars": 1500
+        },
+        {
+            "repo": "backend-interview",
+            "description": "\u540e\u7aef\u9762\u8bd5\u9898\u6c47\u603b\uff08Python\u3001Redis\u3001MySQL\u3001PostgreSQL\u3001Kafka\u3001\u6570\u636e\u7ed3\u6784\u3001\u7b97\u6cd5\u3001\u7f16\u7a0b\u3001\u7f51\u7edc\uff09",
+            "stars": 1078
+        },
+        {
+            "repo": "angular-flask",
+            "description": "An AngularJS (frontend) + Flask / Python (backend) Boilerplate Application",
+            "stars": 1077
+        },
+        {
+            "repo": "python_backend",
+            "description": "Triton backend that enables pre-process, post-processing and other logic to be implemented in Python.",
+            "stars": 671
+        },
+        {
+            "repo": "throttled-py",
+            "description": "High-performance Python rate limiting library with multiple algorithms (Fixed Window, Sliding Window, Token Bucket, Leaky Bucket & GCRA) and storage backends (Redis, In-Memory).",
+            "stars": 623
+        }
+    ]
+}

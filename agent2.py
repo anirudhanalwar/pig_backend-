@@ -51,7 +51,7 @@ class ArchitectureImplementationPlan(BaseModel):
 # CrewAI Implementation with Ollama
 # -------------------------------------------------------------------
 
-def get_architecture_agent_crew(user_prompt: str, agent1_insights: str, model_name: str = "llama3"):
+def get_architecture_agent_crew(user_prompt: str, agent1_insights: str, model_name: str = "mistral"):
     """
     Creates and returns a Crew configured to run the Architecture & Planning Agent using Ollama.
     """
@@ -146,7 +146,7 @@ def get_architecture_agent_crew(user_prompt: str, agent1_insights: str, model_na
 if __name__ == "__main__":
     
     # Example using Llama 3 (or change to 'mistral', 'phi3' etc that you have pulled in Ollama)
-    OLLAMA_MODEL = "llama3"
+    OLLAMA_MODEL = "mistral"
     print(f"Make sure Ollama is running and you have pulled the model: `ollama run {OLLAMA_MODEL}`")
 
     mock_user_prompt = "I want to build a website that generates innovative product ideas for curious students."

@@ -276,7 +276,7 @@ Constraints:
 def llm_gap_detection(
     cluster_groups: dict[int, list[str]],
     trending_topics: list[str],
-    ollama_model: str = "llama3",
+    ollama_model: str = "mistral",
     base_url: str = "http://localhost:11434",
 ) -> dict[str, Any]:
     """
@@ -342,7 +342,7 @@ class TrendAnalysisAgent:
 
     def __init__(
         self,
-        ollama_model: str = "llama3",
+        ollama_model: str = "mistral",
         ollama_base_url: str = "http://localhost:11434",
         velocity_threshold: float = 0.6,
         top_k_trending: int = 10,
@@ -485,7 +485,7 @@ if __name__ == "__main__":
     }
 
     agent = TrendAnalysisAgent(
-        ollama_model="llama3",
+        ollama_model="mistral",
         ollama_base_url="http://localhost:11434",
         velocity_threshold=0.5,
         top_k_trending=8,

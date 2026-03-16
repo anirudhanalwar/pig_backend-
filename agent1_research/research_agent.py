@@ -6,7 +6,7 @@ import ollama
 from arxiv_rag_tool import arxiv_research_tool
 from github_repo_tool import search_github_repos
 
-MODEL = "llama3:8b"
+MODEL = "mistral"
 
 
 def build_prompt(query, papers, repos):
@@ -61,23 +61,26 @@ Rules:
     return prompt
 
 
-def run_llm(prompt):
+import re
 
+def run_llm(prompt):
     response = ollama.chat(
         model=MODEL,
         messages=[
-            {"role": "system", "content": "Return valid JSON only."},
+            {"role": "system", "content": "Return valid JSON only. Do not wrap in markdown or backticks."},
             {"role": "user", "content": prompt}
-        ]
+        ],
+        options={"temperature": 0.2}
     )
 
     text = response["message"]["content"]
-
-    start = text.find("{")
-    end = text.rfind("}") + 1
-
-    return text[start:end]
-
+    
+    # Strip markdown code fences if present
+    text = re.sub(r"```(?:json)?\s*", "", text).strip()
+    m = re.search(r"\{.*\}", text, re.DOTALL)
+    if m:
+        return m.group(0)
+    return "{}"
 
 def save_json(data):
 
@@ -112,12 +115,19 @@ def research_agent(query):
         print(output)
         return
 
+    # Ensure the LLM didn't drop the raw data
     structured["query"] = query
     structured["timestamp"] = str(datetime.now().date())
+    
+    if "papers" not in structured or not structured["papers"]:
+        structured["papers"] = papers
+        
+    if "github_repositories" not in structured or not structured["github_repositories"]:
+        structured["github_repositories"] = repos
 
     save_json(structured)
 
-    return structured
+    return structured, papers, repos
 
 
 if __name__ == "__main__":
